@@ -659,10 +659,10 @@ namespace HTC.UnityPlugin.VRModuleManagement
                     case Simulate6DoFControllerMode.KeyboardWASD:
                         {
                             if (Input.GetKey(KeyCode.D)) { s_simulatedCtrlPosArray[deviceType] += moveRight * deltaMove; }
-                            if (Input.GetKey(KeyCode.A)) { s_simulatedCtrlPosArray[deviceType] -= moveRight * deltaMove; }
+                            if (Input.GetKey(KeyCode.Q)) { s_simulatedCtrlPosArray[deviceType] -= moveRight * deltaMove; }
                             if (Input.GetKey(KeyCode.E)) { s_simulatedCtrlPosArray[deviceType] += Vector3.up * deltaMove; }
-                            if (Input.GetKey(KeyCode.Q)) { s_simulatedCtrlPosArray[deviceType] -= Vector3.up * deltaMove; }
-                            if (Input.GetKey(KeyCode.W)) { s_simulatedCtrlPosArray[deviceType] += moveForward * deltaMove; }
+                            if (Input.GetKey(KeyCode.A)) { s_simulatedCtrlPosArray[deviceType] -= Vector3.up * deltaMove; }
+                            if (Input.GetKey(KeyCode.Z)) { s_simulatedCtrlPosArray[deviceType] += moveForward * deltaMove; }
                             if (Input.GetKey(KeyCode.S)) { s_simulatedCtrlPosArray[deviceType] -= moveForward * deltaMove; }
 
                             break;
